@@ -91,7 +91,7 @@ namespace Obi{
 		public override void Awake()
 		{
 			base.Awake();
-			selfCollisions = true;
+			//selfCollisions = true;
 			distEnumerator = GetDistributionEnumerator();
 			IEnumerator generation = Initialize();
 			while (generation.MoveNext());
@@ -124,7 +124,7 @@ namespace Obi{
 
 				solver.RequireRenderablePositions();
 
-				// recalculate particle masses, as the number of dimensions used to valculate particle volume depends on the solver.
+				//recalculate particle masses, as the number of dimensions used to valculate particle volume depends on the solver.
 				CalculateParticleMass();
 
 				return true;
