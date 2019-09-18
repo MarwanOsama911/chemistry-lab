@@ -19,7 +19,7 @@ public class chemicalInteraction : MonoBehaviour
     {
         listener.SetActive(true);
         Invoke("startghlian", 5);
-        Invoke("ChemicaleEvent", 7);
+        Invoke("ChemicaleEvent", 10);
     }
 
     public void ExitCalled()
