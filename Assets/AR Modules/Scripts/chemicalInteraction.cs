@@ -15,15 +15,11 @@ public class chemicalInteraction : MonoBehaviour
 
     public GameObject listener;
 
-    void Start()
-    {
-        Called();
-    }
     public void Called()
     {
         listener.SetActive(true);
-        Invoke("startghlian", 3);
-        Invoke("ChemicaleEvent", 6);
+        Invoke("startghlian", 5);
+        Invoke("ChemicaleEvent", 7);
     }
 
     public void ExitCalled()
